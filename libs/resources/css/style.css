@@ -1,6 +1,21 @@
-body{
+.navbar{
+	background:#6F5499;
+	color:white;	
+}
 
-	
+#nav-menu1{  
+			color:white;
+			text-decoration: none;
+		}
+
+
+#nav-menu-link{
+    color: red;
+}
+
+#login-link{
+	background:#6F5499;
+	color:white;
 }
 
 .center {

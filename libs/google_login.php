@@ -85,7 +85,7 @@ if ( isset( $_GET['token'] ) ) {
 
 				function getAuthSubUrl() {
 					$next = getCurrentUrl();
-					$scope = 'http://picasaweb.google.com/data';
+					$scope = 'https://picasaweb.google.com/lh/myphotos?noredirect=1';
 					$secure = 0;
 					$session = 1;
 					return Zend_Gdata_AuthSub::getAuthSubTokenUri($next, $scope, $secure, $session);
