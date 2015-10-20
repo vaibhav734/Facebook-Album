@@ -17,12 +17,12 @@
 	require_once('libs/Facebook/FacebookAuthorizationException.php' );
 
 	
-	$fb_app_id = '438891542976382'; // Goto your Fb app->settings
-	$fb_secret_id = '908f08ed13dfbf1a0179b52491b8db67'; // Goto your Fb app->settings
+	$fb_app_id = '--------------'; // Goto your Fb app->settings
+	$fb_secret_id = '-----------'; // Goto your Fb app->settings
 
 	//fb_login_url is same url which is added in facebook app->settings.
-	$fb_login_url = 'http://localhost/album/index.php'; 
-	$fb_logout_url = 'http://localhost/album/logout.php';
+	$fb_login_url = '........................'; 
+	$fb_logout_url = '........................';
 
 	session_start();
 
