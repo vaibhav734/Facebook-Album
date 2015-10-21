@@ -13,7 +13,6 @@ if ( isset( $_GET['album_download_directory'] ) ) {
 
 require_once 'Zend/Loader.php';
 Zend_Loader::loadClass('Zend_Gdata_Photos');
-//Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
 Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 
 
@@ -76,12 +75,8 @@ function add_new_photo_to_album( $gp, $path, $new_album_name ) {
 	$album_query = $gp->newAlbumQuery();
 
 	$album_query->setUser( $user_name );
-	//$albumQuery->setAlbumId($albumId);
 	$album_query->setAlbumName( $new_album_name );
 
-	// We insert the photo, and the server returns the entry representing
-	// that photo after it is uploaded
-	//$insertedEntry = $gp->insertPhotoEntry( $photoEntry, $albumQuery->getQueryUrl() );
 	$gp->insertPhotoEntry( $photo_entry, $album_query->getQueryUrl() );
 }
 

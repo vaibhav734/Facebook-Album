@@ -4,7 +4,6 @@ session_start();
 
 require_once 'Zend/Loader.php';
 Zend_Loader::loadClass('Zend_Gdata_Photos');
-//Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
 Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 
 if ( isset( $_GET['token'] ) ) {
@@ -14,7 +13,6 @@ if ( isset( $_GET['token'] ) ) {
 	foreach($_GET as $key => $value){
 	  $params = $params . $key . '=' . $value . '&';
 	}
-	//$params = $params . 'ajax=';
 	$params = rtrim( $params, '&' );
 	header("location:../download_album.php?".$params);
 }
