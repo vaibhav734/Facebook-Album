@@ -128,14 +128,14 @@
 								<li>
 									<a href="#" id="move_all" class="center">
 										<span class="btn btn-default col-md-12">
-											Move All
+											Upload All
 										</span>
 									</a>
 								</li>
 								<li>
 									<a href="#" id="move-selected-albums" class="center">
 										<span class="btn btn-default col-md-12">
-											Move Selected
+											Upload Selected
 										</span>
 									</a>
 								</li>
