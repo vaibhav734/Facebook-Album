@@ -35,11 +35,11 @@
 		use Facebook\FacebookRequestException;
 		use Facebook\FacebookAuthorizationException;
 
-		error_reporting(0);
+		//error_reporting(0);
 		FacebookSession::setDefaultApplication( $fb_app_id, $fb_secret_id );
 
 		// login helper with redirect_uri
-		$helper = new FacebookRedirectLoginHelper( $fb_login_url );
+		$helper = new FacebookRedirectLoginHelper('http://desiredwebtech.in/home.php');
 		
 		// see if a existing session exists
 		if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) {
@@ -302,9 +302,9 @@
 			</nav>
 
 			<div id="login-div" class="row">
-				<a id="login-link" class="btn btn-default btn-lg" href="<?php echo $helper->getLoginUrl( $perm );?>">
+				<a  class="btn btn-default btn-lg" href="<?php echo $helper->getLoginUrl( $perm );?>" id="loginLink" style="background:#6F5499;color:#ffffff;">
 				<span class="glyphicon glyphicon-log-in"></span>
-					Facebook
+					Facebook Album
 				</a>
 			</div>
 
